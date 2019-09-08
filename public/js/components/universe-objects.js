@@ -43,8 +43,8 @@ class InfoCards extends React.Component{
                         createEl('span', {key: 0, className: `card-title h6`}, `${cardData.name}`),
                         createEl('div', {key: 1, className: `card-summary flex-box flex-sapce-around`},[
                             createEl(`span`, {key: 0, className: `card-data-block flex-box flex-center-v`}, `Type: ${cardData.type}`),
-                            createEl(`span`, {key: 0, className: `card-data-block flex-box flex-center-v`}, `Volume: ${cardData.volume}`),
-                            createEl(`span`, {key: 0, className: `card-data-block flex-box flex-center-v`}, `Mass: ${cardData.mass}`)
+                            createEl(`span`, {key: 1, className: `card-data-block flex-box flex-center-v`}, `Volume: ${cardData.volume}`),
+                            createEl(`span`, {key: 2, className: `card-data-block flex-box flex-center-v`}, `Mass: ${cardData.mass}`)
 
                         ]),
                     ]),
