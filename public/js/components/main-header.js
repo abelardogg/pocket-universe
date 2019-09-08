@@ -1,6 +1,6 @@
 'use strict'
 const siteLogo = `https://via.placeholder.com/150x80/2288ff/ffffff?text=universe__App`
-const createEl = React.createElement;
+
 
 class MainHeader extends React.Component{
     render(){
@@ -18,5 +18,5 @@ class MainHeader extends React.Component{
     }
 }
 
-const domContainer = document.getElementById(`main_header_container`);
-ReactDOM.render(createEl(MainHeader, {type: `space`}, null), domContainer);
+const mainHeaderContainer = document.getElementById(`main_header_container`);
+ReactDOM.render(createEl(MainHeader, null, null), mainHeaderContainer);

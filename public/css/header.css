@@ -1,4 +1,4 @@
-.main-header{height: 80px;}
+.main-header{height: 80px; background: #ffffff;}
 .navigation-redirect-home, .main-logo{max-height: 100%;}
 .navigation-button{width: 100px; padding: 7px; height: 100%; color: #2288ff; background-color: #ffffff; transition: color .6s, background-color .6s}
 .navigation-button:hover{color: #ffffff; background-color: #2288ff; transition: color .6s, background-color .6s}

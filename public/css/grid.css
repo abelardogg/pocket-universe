@@ -1,5 +1,8 @@
+.container{padding: 15px;}
 .flex-box{display: flex; flex-direction: row;}
 .flex-box.flex-column{flex-direction: column;}
 .flex-centered{align-items: center; justify-content: center;}
 .flex-center-v{align-items: center;}
 .flex-center-h{justify-content: center;}
+.flex-sapce-between{justify-content: space-between;}
+.flex-sapce-around{justify-content: space-around;}

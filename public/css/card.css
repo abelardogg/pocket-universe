@@ -1,0 +1,11 @@
+.card {width: 100%; margin-bottom: 15px; border-radius: 5px;box-shadow: #3f6082 6px 6px 7px -6px;}
+.card-info{padding: 0 10px; width: 100%;}
+.card-title{width: 100%; line-height: 30px; border-bottom: #ccc dotted;}
+.card-summary{height: 100%;}
+.card-data-block{width: 100%; padding: 0 5px;}
+
+@media(max-width: 767px){
+    .card-image{display: none;}
+    .card-summary{flex-direction: column;}
+    .card-data-block{justify-content: flex-start; line-height: 28px;}
+}
