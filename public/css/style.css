@@ -1,0 +1,7 @@
+.welcome-screen{text-align: center; min-height: 450px;}
+a.go-to-home{font-size: 36px;}
+.welcome-message{margin: 20px 0; color: #2288ff;}
+@media(max-width: 767px){
+    a.go-to-home{font-size: 22px;}
+    
+}

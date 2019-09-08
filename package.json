@@ -1,0 +1,31 @@
+{
+  "name": "pocket-universe",
+  "version": "1.0.0",
+  "description": "Small universe database PWA",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelardogg/pocket-universe.git"
+  },
+  "author": "abelardogg",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/abelardogg/pocket-universe/issues"
+  },
+  "homepage": "https://github.com/abelardogg/pocket-universe#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "1.7.x",
+    "jest": "^24.8.0",
+    "node-sass": "^4.12.0"
+  }
+}
