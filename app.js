@@ -9,15 +9,18 @@ app.use(express.static('public'));
 
 // const CONFIG_DB_RAW = fs.readFileSync('db/config.json');
 
-app.get('/', (req, res) => {
-	// const toolsList = CONFIG_DB.toolsRoutes;
 
-	// let model = {
-	// 	section: `home`,
-	// 	title: `breadbox - frontend tools`,
-	// 	toolsList: toolsList
-	// };
-    res.render('pages/home', {});
+app.get('/', (req, res) => {
+	let view = 'pages/home';
+	let model = {};
+	let startPage = req.query.utm_source;
+
+	if(!!startPage && startPage === 'homescreen'){
+		view = 'pages/startPAge';
+	}
+	
+
+    res.render(view, model);
 });
 
 app.listen(process.env.PORT || 3000, function(){
