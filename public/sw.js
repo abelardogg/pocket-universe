@@ -1,5 +1,5 @@
-var CACHE_NAME = 'b';
-const expectedCaches = ['b'];
+var CACHE_NAME = 's';
+const expectedCaches = [CACHE_NAME];
 var urlsToCache = [
   '/start',
   '/css/restart.css',
@@ -35,7 +35,7 @@ self.addEventListener('activate', event => {
         }
       })
     )).then(() => {
-      console.log('V2 now ready to handle fetches!');
+      console.log(`${CACHE_NAME} now ready to handle fetches!`);
     })
   );
 });
