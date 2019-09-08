@@ -13,12 +13,14 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
 	let view = 'pages/home';
 	let model = {};
-	let startPage = req.query.utm_source;
-
-	if(!!startPage && startPage === 'homescreen'){
-		view = 'pages/startPAge';
-	}
 	
+    res.render(view, model);
+});
+
+
+app.get('/start', (req, res) => {
+	let view = 'pages/startPage';
+	let model = {};
 
     res.render(view, model);
 });

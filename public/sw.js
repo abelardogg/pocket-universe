@@ -1,7 +1,7 @@
-var CACHE_NAME = 'a';
-const expectedCaches = ['a'];
+var CACHE_NAME = 'b';
+const expectedCaches = ['b'];
 var urlsToCache = [
-  '/?utm_source=homescreen',
+  '/start',
   '/css/restart.css',
   '/css/grid.css',
   '/css/header.css',
