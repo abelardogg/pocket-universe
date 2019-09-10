@@ -1,16 +1,3 @@
-/*
-Superscript
-⁰
-¹
-²
-³
-⁴
-⁵
-⁶
-⁷
-⁸
-⁹
-*/ 
 const planets = [
     {key: 0, name: `Mercury`, type: `Rocky planet`, volume: `6,083×10¹⁰km³`, mass: `3,302×10²³ kg`},
     {key: 1, name: `Venus`, type: `Rocky planet`, volume: `9.2843×10¹¹ km³`, mass: `4,869×10²⁴ kg`},
@@ -28,23 +15,54 @@ const cardImagePlaceHolder = `https://via.placeholder.com/80/2288ff/ffffff?text=
 
 class InfoCards extends React.Component{
 
-    cards = [];
+    constructor(props) {
+        super(props);
+        this.state = {
+          error: null,
+          isLoaded: false,
+          items: []
+        };
+      }
+
+      cards = [];
+
+    componentDidMount() {
+        fetch('/planets')
+          .then(res => res.json())
+          .then(
+            (result) => {
+              this.setState({
+                isLoaded: true,
+                items: result.planets
+              });
+            },
+            // Note: it's important to handle errors here
+            // instead of a catch() block so that we don't swallow
+            // exceptions from actual bugs in components.
+            (error) => {
+              this.setState({
+                isLoaded: true,
+                error
+              });
+            }
+          )
+      }
+
 
     createCards(){
         const self = this;
-        const cardsDataList = self.props.cardsData;
-        console.log(`planets list: `, cardsDataList);
-        for(let i = 0; i < cardsDataList.length; i++){
-            let cardData = cardsDataList[i];
+        const planets = self.state.items;
+        for(let i = 0; i < planets.length; i++){
+            let planet = planets[i];
             self.cards.push(
                 createEl(`div`, {key: i, className: `card flex-box`}, [
                     createEl('img', {key: 0, className: `card-image`, src: cardImagePlaceHolder}),
                     createEl('div', {key: 1, className: `card-info flex-box flex-column`}, [
-                        createEl('span', {key: 0, className: `card-title h6`}, `${cardData.name}`),
+                        createEl('span', {key: 0, className: `card-title h6`}, `${planet.name}`),
                         createEl('div', {key: 1, className: `card-summary flex-box flex-sapce-around`},[
-                            createEl(`span`, {key: 0, className: `card-data-block flex-box flex-center-v`}, `Type: ${cardData.type}`),
-                            createEl(`span`, {key: 1, className: `card-data-block flex-box flex-center-v`}, `Volume: ${cardData.volume}`),
-                            createEl(`span`, {key: 2, className: `card-data-block flex-box flex-center-v`}, `Mass: ${cardData.mass}`)
+                            createEl(`span`, {key: 0, className: `card-data-block flex-box flex-center-v`}, `Type: ${planet.type}`),
+                            createEl(`span`, {key: 1, className: `card-data-block flex-box flex-center-v`}, `Diameter: ${planet.diameter.base}`),
+                            createEl(`span`, {key: 2, className: `card-data-block flex-box flex-center-v`}, `Mass: ${planet.mass.base}`)
 
                         ]),
                     ]),
@@ -55,16 +73,19 @@ class InfoCards extends React.Component{
 
 
     render(){
-        const self = this;
-        console.log(self.cards);
-        self.createCards();
-        console.log(self.cards);
+        console.log(this.state);
 
-        return self.cards;
+        if(this.state.isLoaded){
+            const self = this;
+            self.createCards();
+            return self.cards;
+        }
+        
+        return 'Nothing loaded';
 
     }
 }
 
 const universeObjectsContainer = document.getElementById(`universe_objects_container`);
 
-let planetsInstance = new ReactDOM.render(createEl(InfoCards, {cardsData: planets}, null), universeObjectsContainer);
+let planetsInstance = new ReactDOM.render(createEl(InfoCards, null, null), universeObjectsContainer);

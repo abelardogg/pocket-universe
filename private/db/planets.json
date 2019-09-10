@@ -1,0 +1,173 @@
+{"planets":[
+    {
+        "key": 0,
+        "name": "Mercury",
+        "type": "Rocky planet",
+        "mass":{
+            "base": 0.330,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 4879,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 3.7,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 1,
+        "name": "Venus",
+        "type": "Rocky planet",
+        "mass":{
+            "base": 4.87,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 12104,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 8.9,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 2,
+        "name": "Earth",
+        "type": "Rocky planet",
+        "mass":{
+            "base": 5.97,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 12756,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 9.8,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 3,
+        "name": "Mars",
+        "type": "Rocky planet",
+        "mass":{
+            "base": 0.642,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 6792,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 3.7,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 4,
+        "name": "Jupiter",
+        "type": "Gas giant planet",
+        "mass":{
+            "base": 1898,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 142984,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 23.1,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 5,
+        "name": "Saturn",
+        "type": "Gas giant planet",
+        "mass":{
+            "base": 568,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 120536,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 9.0,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 6,
+        "name": "Uranus",
+        "type": "Ice giant planet",
+        "mass":{
+            "base": 86.8,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 51118,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 8.7,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 7,
+        "name": "Neptune",
+        "type": "Ice giant planet",
+        "mass":{
+            "base": 102,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 49528,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 11.0,
+            "unit": "m/s^2"
+        } 
+    },
+    {
+        "key": 8,
+        "name": "Pluto",
+        "type": "Dwarf rocky ice planet",
+        "mass":{
+            "base": 0.0146,
+            "multipler": "10n24",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 2370,
+            "multipler": "1n0",
+            "unit": "km"
+        },
+        "Gravity": {
+            "base": 0.7,
+            "unit": "m/s^2"
+        } 
+    }
+]}
