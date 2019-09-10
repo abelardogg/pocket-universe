@@ -1,6 +1,11 @@
+/*
+Colors
+Cosmic purple = #8d73cc
+
+*/
 .welcome-screen{text-align: center; min-height: 450px;}
 a.go-to-home{font-size: 36px;}
-.welcome-message{margin: 20px 0; color: #235337;}
+.welcome-message{margin: 20px 0; color: #8d73cc;}
 @media(max-width: 767px){
     a.go-to-home{font-size: 22px;}
     

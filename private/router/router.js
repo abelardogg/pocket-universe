@@ -1,10 +1,11 @@
+// CONTROLLERS ROUTER
+
 const express = require('express');
 const app = express();
 
 const home = require('../controllers/home.js');
 const about = require('../controllers/about.js');
 const sources = require('../controllers/sources.js');
-
 
 app
 .use('/', home)

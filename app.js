@@ -3,6 +3,7 @@ const app = express();
 const fs = require('fs');
 
 const appRouter = require('./private/router/router.js');
+const apiRouter = require('./private/router/apiRouter');
 
 
 
@@ -15,6 +16,7 @@ app.use(express.static('public'));
 
 
 app.use('/', appRouter);
+app.use('/', apiRouter);
 
 
 
