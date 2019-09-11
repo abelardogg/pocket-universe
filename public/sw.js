@@ -1,13 +1,13 @@
-var CACHE_NAME = 's';
+var CACHE_NAME = 'q';
 const expectedCaches = [CACHE_NAME];
 var urlsToCache = [
-  '/start',
-  '/css/restart.css',
-  '/css/grid.css',
-  '/css/header.css',
-  '/css/footer.css',
-  '/css/main.css',
-  '/css/style.css'
+  // '/start',
+  // '/css/restart.css',
+  // '/css/grid.css',
+  // '/css/header.css',
+  // '/css/footer.css',
+  // '/css/main.css',
+  // '/css/style.css'
 ];
 
 self.addEventListener('install', function(event) {
@@ -49,6 +49,7 @@ self.addEventListener('fetch', function(event) {
           if (response) {
             return response;
           }
+          
           return fetch(event.request);
         }
       )
