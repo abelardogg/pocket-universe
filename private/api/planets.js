@@ -1,13 +1,15 @@
 const express = require('express');
-var router = express.Router();
-const fs = require('fs');
-
-const DB_PLANETS_RAW = fs.readFileSync('private/db/planets.json');
-const DB_PLANETS = JSON.parse(DB_PLANETS_RAW);
+const router = express.Router();
+const planets = require('../dao/planetsDao');
 
 router.get('/planets', (req, res) =>{
-    const planets = DB_PLANETS.planets;
-    res.json(planets);
+    const planetsList = planets().getAllPlanets();
+    res.send(planetsList);
+});
+
+router.get('/planetsShort', (req, res) =>{
+    const planetsList = planets().getAllPlanetsShortInfo();
+    res.send(planetsList);
 });
 
 module.exports = router;

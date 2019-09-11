@@ -5,15 +5,15 @@
         "type": "Rocky planet",
         "mass":{
             "base": 0.330,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 4879,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 3.7,
             "unit": "m/s^2"
         } 
@@ -24,15 +24,15 @@
         "type": "Rocky planet",
         "mass":{
             "base": 4.87,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 12104,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 8.9,
             "unit": "m/s^2"
         } 
@@ -43,15 +43,15 @@
         "type": "Rocky planet",
         "mass":{
             "base": 5.97,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 12756,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 9.8,
             "unit": "m/s^2"
         } 
@@ -62,15 +62,15 @@
         "type": "Rocky planet",
         "mass":{
             "base": 0.642,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 6792,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 3.7,
             "unit": "m/s^2"
         } 
@@ -81,15 +81,15 @@
         "type": "Gas giant planet",
         "mass":{
             "base": 1898,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 142984,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 23.1,
             "unit": "m/s^2"
         } 
@@ -100,15 +100,15 @@
         "type": "Gas giant planet",
         "mass":{
             "base": 568,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 120536,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 9.0,
             "unit": "m/s^2"
         } 
@@ -119,15 +119,15 @@
         "type": "Ice giant planet",
         "mass":{
             "base": 86.8,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 51118,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 8.7,
             "unit": "m/s^2"
         } 
@@ -138,15 +138,15 @@
         "type": "Ice giant planet",
         "mass":{
             "base": 102,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 49528,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 11.0,
             "unit": "m/s^2"
         } 
@@ -157,15 +157,15 @@
         "type": "Dwarf rocky ice planet",
         "mass":{
             "base": 0.0146,
-            "multipler": "10n24",
+            "multipler": "10^24",
             "unit": "kg"
         },
         "diameter": {
             "base": 2370,
-            "multipler": "1n0",
+            "multipler": "1^0",
             "unit": "km"
         },
-        "Gravity": {
+        "gravity": {
             "base": 0.7,
             "unit": "m/s^2"
         } 

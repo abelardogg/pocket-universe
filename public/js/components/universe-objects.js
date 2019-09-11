@@ -48,8 +48,9 @@ class InfoCards extends React.Component {
                         createEl('span', { key: 0, className: `card-title h6` }, `${item.name}`),
                         createEl('div', { key: 1, className: `card-summary flex-box flex-sapce-around` }, [
                             createEl(`span`, { key: 0, className: `card-data-block flex-box flex-center-v` }, `Type: ${item.type}`),
-                            createEl(`span`, { key: 1, className: `card-data-block flex-box flex-center-v` }, `Diameter: ${item.diameter.base}`),
-                            createEl(`span`, { key: 2, className: `card-data-block flex-box flex-center-v` }, `Mass: ${item.mass.base}`)
+                            createEl(`span`, { key: 1, className: `card-data-block flex-box flex-center-v` }, `Diameter: ${item.diameter}`),
+                            createEl(`span`, { key: 2, className: `card-data-block flex-box flex-center-v` }, `Mass: ${item.mass}`),
+                            createEl(`span`, { key: 3, className: `card-data-block flex-box flex-center-v` }, `Gravity: ${item.gravity}`)
                         ]),
                     ]),
                 ])
@@ -76,4 +77,4 @@ class InfoCards extends React.Component {
 
 const universeObjectsContainer = document.getElementById(`universe_objects_container`);
 
-let planetsInstance = new ReactDOM.render(createEl(InfoCards, { spaceObjectsList: '/api/planets' }, null), universeObjectsContainer);
+let planetsInstance = new ReactDOM.render(createEl(InfoCards, { spaceObjectsList: '/api/planetsShort' }, null), universeObjectsContainer);
