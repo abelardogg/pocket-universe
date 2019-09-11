@@ -59,16 +59,18 @@ class InfoCards extends React.Component {
 
     render() {
         console.log(this.state);
-        const hasCardsToDisplay = this.state.isLoaded && this.state.items.length > 0;
+        const cardsCallFinished = this.state.isLoaded;
+        const cardsListSize = this.state.items.length;
+        const hasCardsToDisplay = cardsCallFinished && cardsListSize > 0;
 
-        if (hasCardsToDisplay) {
+        if(!cardsCallFinished){
+            return createEl('p', { className: `h3` }, `Searching info...`);
+        } else if (hasCardsToDisplay) {
             const self = this;
             self.createCards();
             return self.cards;
         }
-
         return createEl('p', { className: `h3` }, `Sorry! there are nothing to display :(`);
-
     }
 }
 
