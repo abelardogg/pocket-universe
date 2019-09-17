@@ -1,6 +1,6 @@
 {
-    "short_name": "PocketUniverse",
-    "name": "PocketUniverse",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "img/favicon/android-chrome-192x192.png",
@@ -13,9 +13,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/start",
-    "background_color": "#2288ff",
-    "display": "standalone",
-    "orientation": "portrait",
-    "theme_color": "#2288ff"
-  }
+    "theme_color": "#00a2ff",
+    "background_color": "#00a2ff",
+    "display": "standalone"
+}

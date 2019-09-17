@@ -4,14 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Pocket Universe</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/restart.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/grid.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/header.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/footer.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/card.css'>
+    <% include ../templates/main-css.html %>
     <% include ../templates/favicon.html %>
     <link rel="manifest" href="/manifest.json">
 </head>
@@ -20,14 +13,14 @@
     <% include ../templates/header.html %>
 
     <div class="container">
-        <h1>Pocket Universe 0.1</h1>
+        
         <div id="universe_objects_container"></div>
     </div>
 
     <% include ../templates/footer.html %>
 
     <% include ../templates/js-libraries.html %>
-    <script src='/js/app.js'></script>
+    <% include ../templates/main-js.html %>
     <script src="/js/components/universe-objects.js"></script>
 </body>
 

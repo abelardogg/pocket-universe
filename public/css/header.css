@@ -1,7 +1,19 @@
-.main-header{height: 80px; background: #ffffff;}
-.navigation-redirect-home, .main-logo{max-height: 100%;}
-.navigation-button{width: 100px; padding: 7px; height: 100%; color: #2288ff; background-color: #ffffff; transition: color .6s, background-color .6s}
+.main-header{height: 80px; background: #555555; padding: 0 15px;}
+.navigation-redirect-home, .main-logo{max-height: 100%; margin: 0 15px 0 0;}
+.navigation-redirect-home{width: 195px; font-size: 20px;}
+.navigation-redirect-home p{font-size: 22px; color: white; font-weight: 600;}
+.main-logo{width: 60px; height: 60px; margin: 0 10px 0 0;}
+.navigation-button{width: 100px; padding: 7px; height: 100%; color: #ffffff; background-color: #2e2e2e; transition: color .6s, background-color .6s}
 .navigation-button:hover{color: #ffffff; background-color: #2288ff; transition: color .6s, background-color .6s}
+.mobile-menu-switch-close{background-color: #220000ba;}
 
+@media(min-width: 992px){
+    .main-header .mobile-menu-switch, .main-header .mobile-menu-switch-close{display: none;}
+}
 
-
+@media(max-width: 991px){
+    .main-header{justify-content: space-between; align-items: center;}
+    .site-main-navigation{display: none;}
+    .site-main-navigation.active{display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75); flex-direction: column; justify-content: flex-start;}
+    .navigation-button{width: 100%; height: 50px; justify-content: flex-end; font-size: 28px; border-bottom: 1px solid #ff5200;}
+}

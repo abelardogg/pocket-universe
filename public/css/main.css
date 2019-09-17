@@ -1,10 +1,16 @@
 body{background-color: #555555; color: #ffffff}
+.img{max-width: 100%;}
 .container{background-color: #ffffff; color: #555555;}
-.btn, a.btn{margin: 0; border: 0; margin: 4px; padding: 6px 10px; background-color: #2288ff; color: #ffffff; display: inline-block; font-size: 16px;}
+.btn, a.btn{margin: 0; border: 0; border-radius: 5px; margin: 4px; padding: 6px 10px; background-color: #2288ff; color: #ffffff; display: inline-block; font-size: 16px;}
 .btn:hover, a.btn:hover{background-color: #026de7;}
 .btn:active, a.btn:active{background-color: #0058bc;}
+
+.btn.btn-crysal{background: none; border: 2px solid #2288ff; color: #2288ff;}
 
 .thick-text{font-weight: bold;}
 .blue-text{color: #2288ff;}
 .green-text{color: #00a500}
 .red-text{color: #b80000}
+.orange-text{color: #ff5200;}
+
+.word-break-all{word-break: break-all};

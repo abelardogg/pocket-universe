@@ -7,7 +7,7 @@ body, div, a, button, p, span{
     font-size: 16px;
 }
 
-a, a:hover, a:focus, a:visited{
+a, a:hover, a:focus, a:visited, button.link{
     color: #2288ff; 
     text-decoration: none; 
     outline: none;
