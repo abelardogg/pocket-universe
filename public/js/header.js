@@ -33,6 +33,13 @@
         //event.preventDefault();
         event.stopPropagation();
       }, false);
+
+      navigationButton.addEventListener('touchstart', (event)=> {
+        $this = event.target;
+        //event.preventDefault();
+        event.stopPropagation();
+      }, false);
+
     }
 
     function closeMobileNavigationMenu(event){

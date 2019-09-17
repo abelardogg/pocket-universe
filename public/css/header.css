@@ -3,9 +3,9 @@
 .navigation-redirect-home{width: 195px; font-size: 20px;}
 .navigation-redirect-home p{font-size: 22px; color: white; font-weight: 600;}
 .main-logo{width: 60px; height: 60px; margin: 0 10px 0 0;}
-.navigation-button{width: 100px; padding: 7px; height: 100%; color: #ffffff; background-color: #2e2e2e; transition: color .6s, background-color .6s}
+.navigation-button{width: 100px; padding: 7px; height: 100%; background-color: #2e2e2e; transition: color .6s, background-color .6s}
 .navigation-button:hover{color: #ffffff; background-color: #2288ff; transition: color .6s, background-color .6s}
-.mobile-menu-switch-close{background-color: #220000ba;}
+.mobile-menu-switch-close{background-color: #220000ba; color: #fff;}
 
 @media(min-width: 992px){
     .main-header .mobile-menu-switch, .main-header .mobile-menu-switch-close{display: none;}
