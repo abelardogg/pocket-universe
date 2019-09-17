@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
+
+const appRouter = require('./private/router/router.js');
+const apiRouter = require('./private/router/apiRouter');
+const errorPageHandler = require('./private/controllers/error');
+
+
 
 // CONFIG
 app.engine('.html', require('ejs').renderFile);
@@ -10,19 +15,13 @@ app.use(express.static('public'));
 // const CONFIG_DB_RAW = fs.readFileSync('db/config.json');
 
 
-app.get('/', (req, res) => {
-	let view = 'pages/home';
-	let model = {};
-	
-    res.render(view, model);
-});
+app.use('/', appRouter);
+app.use('/', apiRouter);
 
-
-app.get('/start', (req, res) => {
-	let view = 'pages/startPage';
-	let model = {};
-
-    res.render(view, model);
+// 404 handler
+app.use(function(req, res, next) {
+    console.log();
+    errorPageHandler.notFoundPage(req, res, next);
 });
 
 app.listen(process.env.PORT || 3000, function(){

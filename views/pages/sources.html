@@ -11,20 +11,20 @@
 </head>
 
 <body>
-
+    <% include ../templates/header.html %>
+    
     <div class="container">
-        <div id="welcome-screen" class="welcome-screen">
-            <h1>Welcome to Pocket Universe</h1>
-            <br>
-            <a href="/" class="btn go-to-home">
-                Let's explore the universe >>
-            </a>
-            <br>
-            <p class="welcome-message">
-                The data of numerous space objects in your hands!
-            </p>
-           
-        </div>
+        <h1>Sources</h1>
+        
+        <p class="h5">The info showed in this app came from diferent sites, you can find the sources here!</p>
+        <br>
+        <br>
+        
+        <ul>
+            <li>
+                <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank" class="word-break-all">Planets NASA Fact Sheet - https://nssdc.gsfc.nasa.gov/planetary/factsheet/</a>
+            </li>
+        </ul>
     </div>
 
     <% include ../templates/footer.html %>

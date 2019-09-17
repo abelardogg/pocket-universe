@@ -6,6 +6,7 @@
 .flex-center-h{justify-content: center;}
 .flex-sapce-between{justify-content: space-between;}
 .flex-sapce-around{justify-content: space-around;}
+.lock-scroll{overflow: hidden;}
 
 @media(max-width: 767px){
     .container{padding: 10px;}
