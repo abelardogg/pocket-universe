@@ -15,6 +15,19 @@ app.use(express.static('public'));
 // const CONFIG_DB_RAW = fs.readFileSync('db/config.json');
 
 
+// Redirect to HTTPS
+app.use((req, res, next) => {
+    if (req.hostname === "localhost") {
+        if (req.header('x-forwarded-proto') === 'https') {
+            res.redirect(`https://${req.header('host')}${req.url}`);
+        }
+        else {
+            next();
+        }
+    }
+});
+
+
 app.use('/', appRouter);
 app.use('/', apiRouter);
 
