@@ -6,11 +6,14 @@ body{background-color: #555555; color: #ffffff}
 .btn:active, a.btn:active{background-color: #0058bc;}
 
 .btn.btn-crysal{background: none; border: 2px solid #2288ff; color: #2288ff;}
+.btn.btn-crysal-grey{background: none; border: 2px solid #818181; color: #818181;}
 
 .thick-text{font-weight: bold;}
 .blue-text{color: #2288ff;}
 .green-text{color: #00a500}
 .red-text{color: #b80000}
 .orange-text{color: #ff5200;}
+.purple-text{color: #ae00ff;}
+.grey-text{color: #818181;}
 
 .word-break-all{word-break: break-all};

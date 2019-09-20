@@ -1,12 +1,14 @@
 const sections = [{
     id: 0,
     name: 'planets',
-    description: 'Explore planets.'
+    description: 'Explore planets.',
+    url: '/api/planetsShort'
 },
 {
     id: 1,
     name: 'stars',
-    description: 'Explore stars.'
+    description: 'Explore stars.',
+    url: '/api/starsShort'
 }];
 
 class HomeView extends React.Component{
@@ -16,6 +18,7 @@ class HomeView extends React.Component{
         this.state = {
             activeSectionId: 100,
             activeSectionName: '',
+            activeSectionDescription: '',
             universeObjectsList: [],
             homeSections: sections
         };
@@ -30,14 +33,15 @@ class HomeView extends React.Component{
         const sectionTabs = document.getElementsByClassName('setcionTab');
         const selectedSectionId = Number(el.dataset.section);
         const requestedList = el.dataset.list;
-        let sectionName;
+        let sectionName, sectionDescription;
 
-        
+        this.setActiveButton(el, sectionTabs);
 
         for(let i = 0; i < this.state.homeSections.length; i++){
             const section = this.state.homeSections[i];
             if(section.id === selectedSectionId){
                 sectionName = section.name;
+                sectionDescription = section.description;
                 this.getRequestedList(requestedList);
                 break;
             }
@@ -46,8 +50,18 @@ class HomeView extends React.Component{
             return;
         }
 
-        this.setState({activeSection: selectedSectionId, activeSectionName: sectionName});
+        this.setState({activeSection: selectedSectionId, activeSectionName: sectionName, activeSectionDescription: sectionDescription});
 
+    }
+
+    setActiveButton(el, tabs){
+        for(let i=0; i < tabs.length; i++){
+            const tab = tabs[i];
+            tab.classList.remove('active');
+            tab.disabled = false;
+        }
+        el.classList.add('active');
+        el.disabled = true;
     }
 
     getRequestedList(req){
@@ -92,28 +106,41 @@ class HomeView extends React.Component{
 
     render(){
         return createEl("div", null,
-            createEl(CardsNavigator, {onClickFunction: this.sectionChange }),
-            createEl(SectionTitle, { sectionTitleName: this.state.activeSectionName }),
+            createEl(CardsNavigator, {onClickFunction: this.sectionChange, sections: this.state.homeSections}),
+            createEl(SectionTitle, { sectionTitleName: this.state.activeSectionDescription }),
             this.getCardsList()
         );
     }
 }
 
 function CardsNavigator(props){
+
+    
+
     return createEl('div', {className: 'cards-navigator flex-box flex-center-v'},
-        createEl(NavigatorButton, {selectedSection: 0, clickHandler: props.onClickFunction, sectionName: 'planets', requestedList: '/api/planetsShort'}),
-        createEl(NavigatorButton, {selectedSection: 1, clickHandler: props.onClickFunction, sectionName: 'Stars', requestedList: '/api/starsShort'})
+    getSectionElements(props)
     );
 }
 
 function NavigatorButton(props) {
-    return createEl('button', {['data-section']: props.selectedSection, ['data-list']: props.requestedList, className: 'setcionTab section-tab btn btn-crysal', onClick: (e) => { props.clickHandler(e) } }, `${props.sectionName}`);
+    return createEl('button', {['data-section']: props.selectedSection, ['data-list']: props.requestedList, className: 'setcionTab section-tab btn btn-crysal-grey', onClick: (e) => { props.clickHandler(e) } }, `${props.sectionName}`);
 }
 
 function SectionTitle(props) {
-    return createEl('p', {className: 'h5 section-title orange-text'}, props.sectionTitleName);
+    return createEl('p', {className: 'h5 section-title grey-text'}, props.sectionTitleName);
 }
 
+function getSectionElements(props){
+    let sections = props.sections;
+    let sectionsButtons = [];
 
+    for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        sectionsButtons.push(
+            createEl(NavigatorButton, { key: i, selectedSection: section.id, clickHandler: props.onClickFunction, sectionName: section.name, requestedList: section.url })
+        );
+    }
+    return sectionsButtons;
+}
 
 let Navigator = new ReactDOM.render(createEl(HomeView), document.getElementById(`universe_objects_container_t`));
