@@ -1,3 +1,13 @@
+const sections = [{
+    id: 0,
+    name: 'planets',
+    description: 'Explore planets.'
+},
+{
+    id: 1,
+    name: 'stars',
+    description: 'Explore stars.'
+}];
 
 class HomeView extends React.Component{
     
@@ -5,55 +15,30 @@ class HomeView extends React.Component{
         super(props);
         this.state = {
             activeSectionId: 100,
-            activeSectionName: 'no section',
-            universeObjectsList: []
+            activeSectionName: '',
+            universeObjectsList: [],
+            homeSections: sections
         };
 
         this.sectionChange = this.sectionChange.bind(this);
     }
     
-    sections = [{
-        id: 0,
-        name: 'planets',
-        description: 'Explore planets.'
-    }];
-
-    testData = [
-        {
-            title: 'Mercury',
-            info: [{
-                field: 'type',
-                value: 'Rocky'
-            },
-            {
-                field: 'Diameter',
-                value: '4879'
-            }]
-        },
-        {
-            title: 'Venus',
-            info: [{
-                field: 'type',
-                value: 'Rocky'
-            },
-            {
-                field: 'Diameter',
-                value: '4879'
-            }]
-        }
-    ];
     
 
     sectionChange(e){
+        const el = e.target;
         const sectionTabs = document.getElementsByClassName('setcionTab');
-        const selectedSectionId = Number(e.target.dataset.section);
+        const selectedSectionId = Number(el.dataset.section);
+        const requestedList = el.dataset.list;
         let sectionName;
-        //console.log(this);
-        for(let i = 0; i < this.sections.length; i++){
-            const section = this.sections[i];
+
+        
+
+        for(let i = 0; i < this.state.homeSections.length; i++){
+            const section = this.state.homeSections[i];
             if(section.id === selectedSectionId){
                 sectionName = section.name;
-                this.getRequestedList();
+                this.getRequestedList(requestedList);
                 break;
             }
         }
@@ -62,15 +47,14 @@ class HomeView extends React.Component{
         }
 
         this.setState({activeSection: selectedSectionId, activeSectionName: sectionName});
-        //console.log(this);
+
     }
 
-    getRequestedList(){
-        fetch('/api/planetsShort')
+    getRequestedList(req){
+        fetch(req)
             .then(res => res.json())
             .then(
                 (result) => {
-                   // console.log(result);
                     this.setState({
                         universeObjectsList: result
                     });
@@ -102,27 +86,32 @@ class HomeView extends React.Component{
             }
             return elements;
         } else {
-            return createEl('p', { className: `h3` }, `Sorry! there are nothing to display :(`);
+            return createEl('p', { className: `h3` }, `Select the section you want to explore :)`);
         }
     }
 
     render(){
-        
         return createEl("div", null,
-            createEl(NavigatorButton, { selectedSection: 0, onClickFunction: this.sectionChange }),
+            createEl(CardsNavigator, {onClickFunction: this.sectionChange }),
             createEl(SectionTitle, { sectionTitleName: this.state.activeSectionName }),
             this.getCardsList()
-            //createEl(Card, { spaceObjectsList: '/api/planetsShort' })
         );
     }
 }
 
+function CardsNavigator(props){
+    return createEl('div', {className: 'cards-navigator flex-box flex-center-v'},
+        createEl(NavigatorButton, {selectedSection: 0, clickHandler: props.onClickFunction, sectionName: 'planets', requestedList: '/api/planetsShort'}),
+        createEl(NavigatorButton, {selectedSection: 1, clickHandler: props.onClickFunction, sectionName: 'Stars', requestedList: '/api/starsShort'})
+    );
+}
+
 function NavigatorButton(props) {
-    return createEl('button', {['data-section']: props.selectedSection, className: 'setcionTab', onClick: (e) => { props.onClickFunction(e) } }, 'planets');
+    return createEl('button', {['data-section']: props.selectedSection, ['data-list']: props.requestedList, className: 'setcionTab section-tab btn btn-crysal', onClick: (e) => { props.clickHandler(e) } }, `${props.sectionName}`);
 }
 
 function SectionTitle(props) {
-    return createEl('p', null, props.sectionTitleName);
+    return createEl('p', {className: 'h5 section-title orange-text'}, props.sectionTitleName);
 }
 
 

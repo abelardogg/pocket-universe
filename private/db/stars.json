@@ -1,0 +1,22 @@
+{"stars":[
+    {
+        "key": 100,
+        "name": "Sun",
+        "type": "Yellow dwarf ",
+        "mass":{
+            "base": 1.9885,
+            "multipler": "10^30",
+            "unit": "kg"
+        },
+        "diameter": {
+            "base": 1.39,
+            "multipler": "10^6",
+            "unit": "km"
+        },
+        "gravity": {
+            "base": 274,
+            "unit": "m/s^2"
+        } 
+    }
+    
+]}

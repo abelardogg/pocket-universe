@@ -1,3 +1,6 @@
+.cards-navigator{height: 40px; padding: 0 15px;}
+.section-tab{width: 80px; height: 40px; margin: 0 8px 0 0;}
+.section-title{padding: 0 15px; margin: 8px 0;}
 .card {width: 100%; margin-bottom: 15px; border-radius: 5px;box-shadow: #3f6082 6px 6px 7px -6px;}
 .card-info{padding: 0 10px; width: 100%;}
 .card-title{width: 100%; line-height: 30px; border-bottom: #ccc dotted;}
