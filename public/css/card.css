@@ -8,6 +8,7 @@
 .card-title{width: 100%; line-height: 30px; border-bottom: #ccc dotted;}
 .card-summary{height: 100%;}
 .card-data-block{width: 100%; padding: 0 5px;}
+.card-image{width: 100px; height: 100px;}
 
 @media(max-width: 767px){
     .card-image{display: none;}

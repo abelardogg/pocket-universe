@@ -15,12 +15,17 @@ let planetsDao = () =>{
             
             for(let p of planets){
                 const newPlanet = {
-                    key: p.key,
-                    name: p.name,
-                    type: p.type,
-                    mass: `${p.mass.base}x${p.mass.multipler} ${p.mass.unit}`,
-                    diameter: `${p.diameter.base}x${p.diameter.multipler} ${p.diameter.unit}`,
-                    gravity: `${p.gravity.base} ${p.gravity.unit}`
+                    primary: {
+                        key: p.key,
+                        name: p.name,
+                        imgSrc: p.imgSrc,
+                    },
+                    secondary:{
+                        type: p.type,
+                        mass: `${p.mass.base}x${p.mass.multipler} ${p.mass.unit}`,
+                        diameter: `${p.diameter.base}x${p.diameter.multipler} ${p.diameter.unit}`,
+                        gravity: `${p.gravity.base} ${p.gravity.unit}`
+                    }
                 }
                 planetShortInfoList.push(newPlanet);
             }

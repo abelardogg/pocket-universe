@@ -2,6 +2,7 @@
     {
         "key": 100,
         "name": "Sun",
+        "imgSrc": "https://previews.dropbox.com/p/thumb/AAmI4lLSfs_XNn3l8rvSEogQjsKavweBAgwnuWsTEOBSrQRXpW5xbH6GiyiiOQqQ2xHmNWREz1cjKkLcHgBT_24LgSEiA3AqjXn3Ssq0cn1r3BWZpon4r2drKzYZHchpaQrE0CmfApo_72eVw-k2Rg8zcPKNyg3IIZJn0-zbUgi4mHkEmsHfxYhqirY148xgGuToP1_xUz7dSMqb7GmMps8VnOAx2kQ3M7otXHMylvW7l4DhdW1TLRYmYFQ14gHyxpTelHv_CNB0PjoNxZv6pF4vkgsOHAxpy6IBPlqtDI7jr22DcZram74uhvu1SMNIFxiFE_azV1i2eUv_jhZpKPr_GGmi37W2fw5-os92t-7JiA/p.png?fv_content=true&size_mode=5",
         "type": "Yellow dwarf ",
         "mass":{
             "base": 1.9885,
