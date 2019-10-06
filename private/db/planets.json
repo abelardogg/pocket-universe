@@ -2,7 +2,7 @@
     {
         "key": 0,
         "name": "Mercury",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAmn9jK3PQQEgCE5LyXUFWSBQP4f0byDLmW8gB8UHLYP7m5VCSu4IG5BfHRdWfy9kCFrhSplIsCHjFiJcAPzW-qexVKOaO4Cqr7eLkpyPLQR80uJ6Y6_MW_CP25yefXxQZZhhEzO5Hae7A3Mg_W0YGKS2ZrSmpxr_EATFRwqOInxcWUTWjJX7sXnuyQV4unhAMpbCai3YikqxT9zCbQUgNRgJMZrhZqj6L8CNhpIhvlLN26E5FHN3mf3lzEAe7nJ-ZYHwRRxgsVYcx9RuCplU1s_d0u886GUHNjNKYUhc91_9QxLHHRyk-Ju10fMkwQSdl8JgvdtBCsHs3zXToFwie06/p.png?size=2048x1536&size_mode=3",
+        "imgSrc": "/img/site/planets/mercury.png",
         "type": "Rocky planet",
         "mass":{
             "base": 0.330,
@@ -22,7 +22,7 @@
     {
         "key": 1,
         "name": "Venus",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAnpOy0D4GS9y1wWMx-k9xkDnt10-IzIcYmZPri6e_s2tcEZSGF97zppS6L2kClqelq9BHJvrcwI78-d5O5kWaj8-jtU0231qzd_kqIHqWiOe7iWtpdhr2NDPAyE-FmCbyQBvKBbA6JoxNRsbbnBixRx3scYzP1AqpflrxAqXntS59zKURNgrrfwNbzXabcLHw_O91hG5grMgSidIrlaE6Uif1vvERbH8Aw-1HVtgMDYZo0zzLoc-NbMOgOgqEB2_ZfgG3qt42HBqm1VJyRPzhNCyOovcH85kWfHCfVZMzC6IR7UFI-06DOmfUoazJ6R3qQnnphVvdt-sRPKfguho-Yp/p.png?size=2048x1536&size_mode=3",
+        "imgSrc": "/img/site/planets/venus.png",
         "type": "Rocky planet",
         "mass":{
             "base": 4.87,
@@ -42,7 +42,7 @@
     {
         "key": 2,
         "name": "Earth",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAkVGcMSsqaT1VwMyOaiI4obuvgKFVvxx4S1ol49a1ewB0hAen-86JFqtGY6lUkWuaSZmYl8qCWENRliV_572sipiHukPUN_VCwWKcZxLKVdSLhpSJ8QDFMnOYnAza-y0yPWsUaMypZREn_rETLmlRdUg2fVLKoi66YIC54xg25GD5F6hGblX2hSEn2H02Jp4FmDHNXgIlEo1h0fPz0MEv6c_gJRy6TOX4Vk9tyqMUdtKul2Em6m9gpBW_Ru64DBE2aR4N3_WZYDle975rhzsVRlP2ylG6JXPj_OxAME8zEkhTvi-H1q72ILc-XW8tWmu7f8zg0JxxHK0Ui9RrrmsbWq6ksNUVH_xwqY9OWIqN0UEg/p.png?size=2048x1536&size_mode=3",
+        "imgSrc": "/img/site/planets/earth.png",
         "type": "Rocky planet",
         "mass":{
             "base": 5.97,
@@ -62,7 +62,7 @@
     {
         "key": 3,
         "name": "Mars",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAl-JI7mPocf2MsRpkHk_upvGieKOz4sIzofmgt75ewugGB5IXSxTtPz5Dc-QF3TrW08mr_Hi-5Qknro2IsLjtYOxCTU0Snb9_x5suz0b4ZxemT4FM4Bg9oBa7yRFScNy87JzyvZzZInRJ5Gu4VpbA5J0lBioGiK_6tV2JUJxz1M25E_ao0JjJoIFEDLZfFA6PyWQY_UzZVxZYR_Eb-HypwtVC9RGBh9awr5zTfqzIDMzj8-kZ7eqYIPuKNNBmM8gLQSdA7Jhk2wPA0gs9el_cFJuSbyivPeiUQpfMQ5NdaFH3U2teDtRMwynmYl3GPXTsBGzMq10fmnBWdUqqdaG5av/p.png?fv_content=true&size_mode=5",
+        "imgSrc": "/img/site/planets/mars.png",
         "type": "Rocky planet",
         "mass":{
             "base": 0.642,
@@ -82,7 +82,7 @@
     {
         "key": 4,
         "name": "Jupiter",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAnxnSzVN4QkxbbSnt01fef6kq-G8XuP-fmG5V5S0pmHflswmKp-PsIlPo-3rN3JgdbiDNAXV30GY5LPF0mFVYyUTAQrcnonRZ-LbnMF1Gn3URNpDGv2To5jivnrmUVR0SNeULOEGh22zrmIfS1o7RudVtFHSXkpqvRbbobwGPQZ6yDmnlv8nZZ4wxdVClHl1EjPWzRATLPpMTq7gNy47ovLhYS-R9ejr-gJusuZKZN1r0_Rhakl4ZLkoaSAetaDvvt-ba5Tzbc4Z0el649Uk9tuVyLo-joAF9qWjOOjYSqkkTRO2f4N8aNYi0a05Y0B2zn8b-2-QCPSxXtmcypr9srw/p.png?fv_content=true&size_mode=5",
+        "imgSrc": "/img/site/planets/jupiter.png",
         "type": "Gas giant planet",
         "mass":{
             "base": 1898,
@@ -102,7 +102,7 @@
     {
         "key": 5,
         "name": "Saturn",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAn1ECoS-hEnp_-1_zPWY4ndxZVUTFah7-4sPrxOObF9vgYXt6YdJc7x2kMCoqWq5-n1urx6sXg9LoFsEbC_xLIczjPOSnz-2XmBgzHj9BpIDzwhCoWjKUt9tupNRYX2lm8WndBpJtd42Lv-kIx4olaJXje9ZZiDzWXHT6dZ54TwY5F5-9Aiay-4S65VtaQchRIioDj-g67lYPNX5uPCf_MyooX_qm1hAsdBbCdu2XL7D5P38drFEFEeElfhpICmPSUF8AYtrmc-QL2mwyIX98cuQbwUSiKt50_fN6iYSB1nG_DrrKpZHj1lvgBxV20L2t_t2O1jlCyQPKivkE3PplX0/p.png?fv_content=true&size_mode=5",
+        "imgSrc": "/img/site/planets/saturn.png",
         "type": "Gas giant planet",
         "mass":{
             "base": 568,
@@ -122,7 +122,7 @@
     {
         "key": 6,
         "name": "Uranus",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAkID8v9_MFRtoC9ZHEXKvRG_17XF5JWb47y8ex1BX3S3DlzvtYBmuW2mni_g64188Yj7JnoPTpyTXmFMhPon0QLXibq5_xWTpOoSYkKNJsrZXZYQ18Yx8itUnApcTLAx2odLxR9t8OgJNy_UJIeKI6BcmjK74Exvtpqp2eMYQ6pOHW0YGdM4hV8LaHHrTsoPSXptlA1mSqPgprjQDUN8O5flDp0ROL7A3Sd4ETPy6fMOBRGtCUEvGc9RifTXP1X_8giFuHxYcrmmRvO5FVcvpQUNaRU5SaYD0X65sPptCIed_1XczW6RPb5PcPLqVH_j5YcA6pk48bOYPiUZFXJcRwZ/p.png?size=2048x1536&size_mode=3",
+        "imgSrc": "/img/site/planets/uranus.png",
         "type": "Ice giant planet",
         "mass":{
             "base": 86.8,
@@ -142,7 +142,7 @@
     {
         "key": 7,
         "name": "Neptune",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAn1g_IRqS9f1RANVAxFAOGUnRyl1zsuZAvHlsPXhNB3waeKEPw0UuPSrRozkITtJwZV7fRxYwfmZovuw8pyUloyD36wfxC7L7ogYXJydX9R_EsMZzrsVV4I01G0oKVL9vE0YxkzeFQHCd1G95rvdlgcAGdxsAqRAru-w01NRSUPt0M1Z2igJZem7-9s7HyZKqn_-Qiu0wb3_E8j9xAx3N9i4RVihnp3eMnRSAroJ1KIB_TYpa6Nj3ezUchAUhVmK6yfj5NDIbs7GITylej2zYlZFRJ8uHsisHA25fcRoIsvsIdBzYrlZ9LJnoWYx-4jzgXonwZZRNpZfMC2lCMaFPEY/p.png?fv_content=true&size_mode=5",
+        "imgSrc": "/img/site/planets/neptune.png",
         "type": "Ice giant planet",
         "mass":{
             "base": 102,
@@ -162,7 +162,7 @@
     {
         "key": 8,
         "name": "Pluto",
-        "imgSrc": "https://previews.dropbox.com/p/thumb/AAl_vBNO-TfEcLMQtu_oeAeWY3_YJMsY4e30YZIk73KEyJwtpvD1swQLQRa77bwPD8yITh0pi2x76m49e_IxRthzur-Z4P7Vi2_LGeyQf3FsK-q8hO15GUyGTmE3M_N6cmACZDdwACuhqbLIJamg6rSkOkeXXqyJCObwWTXKtqFu4o4y7wZ-kOPiFFblV5UT8a127byHBdXQkzuU-FyIhNY2vreG6GGx1ixZPsFvLwaPsJF1X9bYmxnRf3vO2L8vHuMKIz14hJV0rzbCkebij9mO1lU6aBQMzJ8iMvwQl0QubK4sbMg5GKvXEEIg9w_pVNdNwdBLS4dRpODez7ivqzos/p.png?fv_content=true&size_mode=5",
+        "imgSrc": "/img/site/planets/pluto.png",
         "type": "Dwarf rocky ice planet",
         "mass":{
             "base": 0.0146,

@@ -143,4 +143,4 @@ function getSectionElements(props){
     return sectionsButtons;
 }
 
-let Navigator = new ReactDOM.render(createEl(HomeView), document.getElementById(`universe_objects_container_t`));
+let UniverseObjectsContainer = new ReactDOM.render(createEl(HomeView), document.getElementById(`universe_objects_container`));

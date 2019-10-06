@@ -1,0 +1,16 @@
+{
+    "blog": [
+        {
+            "id": 0,
+            "title": "lightspeed",
+            "tldr": "299,792,458 m/s",
+            "fullInfo": "blog/light-speed.html"
+        },
+        {
+            "id": 1,
+            "title": "au (Astronomical Unit)",
+            "tldr": "about 150 million kilometres",
+            "fullInfo": "blog/astronomical-unit.html"
+        }
+    ]
+}
