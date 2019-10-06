@@ -114,9 +114,6 @@ class HomeView extends React.Component{
 }
 
 function CardsNavigator(props){
-
-    
-
     return createEl('div', {className: 'cards-navigator flex-box flex-center-v'},
     getSectionElements(props)
     );
