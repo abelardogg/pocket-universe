@@ -8,6 +8,7 @@ body{background-color: #555555; color: #ffffff}
 
 .btn.btn-crysal{background: none; border: 2px solid #2288ff; color: #2288ff;}
 .btn.btn-crysal-grey{background: none; border: 2px solid #818181; color: #818181;}
+.btn.btn-crysal-red{background: none; border: 2px solid #b80000; color: #b80000;}
 
 .thick-text{font-weight: bold;}
 .blue-text{color: #2288ff;}

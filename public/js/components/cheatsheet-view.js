@@ -6,7 +6,8 @@ class CheatsheetView extends React.Component{
         this.state = {
             modal:{
               info: "...",
-              isOpen: false
+              isOpen: false,
+              error: null
             },
             error: null,
             isLoaded: false,
@@ -36,8 +37,44 @@ class CheatsheetView extends React.Component{
                 error
               });
             }
-          )
+          );
       }
+
+
+    openModal(e){
+      e.currentTarget;
+      console.log('opening modal...');
+      let id = e.target.dataset.blog; 
+      let modal = {...this.state.modal};
+      modal.isOpen = true;
+      this.setModalInfo(id);
+      this.setState({modal});
+    }
+
+    closeModal(){
+      console.log('closing modal...');
+      let modal = {...this.state.modal};
+      modal.isOpen = false;
+      this.setState({modal});
+    }
+
+    setModalInfo(id){
+      fetch(`/api/blogContent/${id}`)
+      .then(res => res.text())
+      .then(
+        (data) => {
+        let modal = {...this.state.modal};
+        modal.info = data;
+        this.setState({modal});
+        document.getElementById('modal-body').innerHTML = this.state.modal.info;
+      },
+      (error) =>{
+        let modal = {...this.state.modal};
+        modal.error = error;
+        this.setState(modal);
+      }
+      );
+    }
 
     getBlogsList(){
       const blogs = this.state.items;
@@ -51,23 +88,13 @@ class CheatsheetView extends React.Component{
         return cards;
     }
 
-    openModal(){
-      console.log('opening modal...');
-      this.setState({modal: {isOpen: true}});
-    }
-
-    closeModal(){
-      console.log('closing modal...');
-      this.setState({modal: {isOpen: false}});
-    }
-
     render(){
 
         const hasErrors = this.state.error;
         const isNotLoaded = !this.state.isLoaded;
 
         if(hasErrors){
-            return createEl('div', {className: 'red-text'}, 'Sorry, something went worng');
+            return createEl('div', {className: 'red-text'}, 'Sorry, something went wrong');
         } else if(isNotLoaded){
             return createEl('div', {className: 'purple-text'}, 'Searching blogs...');
         }

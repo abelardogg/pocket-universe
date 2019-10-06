@@ -21,3 +21,5 @@ h4, .h4{font-size: 24px;}
 h5, .h5{font-size: 20px;}
 h6, .h6{font-size: 18px;}
 
+/*This will prevent bubbling click efects*/
+button span{pointer-events: none;}

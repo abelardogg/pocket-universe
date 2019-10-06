@@ -4,11 +4,14 @@
 .section-tab.active.btn{border-color: #2288ff; color: #2288ff; font-weight: 600; border-bottom-color: #ffffff;}
 .section-title{padding: 0 15px; margin: 8px 0;}
 .card {width: 100%; margin-bottom: 15px; border-radius: 5px 5px;box-shadow: #3f6082 6px 6px 7px -6px;}
-.card-info{padding: 0 10px; width: 100%;}
+.card-info{padding: 0 10px; width: 100%; background: #ffffff; color: #555555;}
 .card-title{width: 100%; line-height: 30px; border-bottom: #ccc dotted;}
 .card-summary{height: 100%;}
 .card-data-block{width: 100%; padding: 0 5px;}
 .card-image{width: 100px; height: 100px;}
+.clickable-card{height: 50px;}
+.clickable-card span:first-child{text-align: left;}
+.clickable-card span:last-child{text-align: right;}
 
 @media(max-width: 767px){
     .card-image{display: none;}

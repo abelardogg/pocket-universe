@@ -3,7 +3,7 @@ function ClickableCard(props){
     const tldr = props.data.tldr;
     const blogId = props.data.id;
 
-    return createEl('div', {className: `card flex-box flex-sapce-between card-info clickableCard`, "data-blog":`${blogId}`, onClick: (e) => { props.clickHandler(e) } }, 
+    return createEl('button', {className: `card flex-box flex-sapce-between card-info clickable-card clickableCard`, "data-blog":`${blogId}`, onClick: (e) => { props.clickHandler(e) } }, 
         createEl('span', null, `${title}`),
         createEl('span', null, `${tldr}`)
     );
