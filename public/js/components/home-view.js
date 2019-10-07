@@ -114,9 +114,6 @@ class HomeView extends React.Component{
 }
 
 function CardsNavigator(props){
-
-    
-
     return createEl('div', {className: 'cards-navigator flex-box flex-center-v'},
     getSectionElements(props)
     );
@@ -143,4 +140,4 @@ function getSectionElements(props){
     return sectionsButtons;
 }
 
-let Navigator = new ReactDOM.render(createEl(HomeView), document.getElementById(`universe_objects_container_t`));
+let UniverseObjectsContainer = new ReactDOM.render(createEl(HomeView), document.getElementById(`universe_objects_container`));

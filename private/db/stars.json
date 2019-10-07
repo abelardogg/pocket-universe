@@ -2,6 +2,7 @@
     {
         "key": 100,
         "name": "Sun",
+        "imgSrc": "/img/site/stars/sun.png",
         "type": "Yellow dwarf ",
         "mass":{
             "base": 1.9885,

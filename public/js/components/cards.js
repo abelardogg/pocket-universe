@@ -1,7 +1,7 @@
 function Card(props){
-    //props = testData;
+    let imgSrc = !!props.data.primary.imgSrc ? props.data.primary.imgSrc : cardImagePlaceHolder; 
     return createEl('div', {className: `card flex-box` },
-        createEl(CardImage, {imgSrc: cardImagePlaceHolder}),
+        createEl(CardImage, {imgSrc: imgSrc}),
         createEl(CardInfoColumn, {cardData: props.data})
     );
 }
@@ -12,13 +12,13 @@ function CardImage(props){
 
 function CardInfoColumn(props){
 
-    let cardInfo = JSON.parse(JSON.stringify(props.cardData));
-    delete cardInfo.key;
-    delete cardInfo.name;
+    // let cardInfo = JSON.parse(JSON.stringify(props.cardData));
+    // delete cardInfo.key;
+    // delete cardInfo.name;
 
     return createEl('div', {className: `card-info flex-box flex-column` },
-        createEl(CardTitle, {name: props.cardData.name}),
-        createEl(CardDataContainer, {cardInfo: cardInfo})
+        createEl(CardTitle, {name: props.cardData.primary.name}),
+        createEl(CardDataContainer, {cardInfo: props.cardData.secondary})
     );
 }
 
